@@ -3,7 +3,7 @@
 // ================================
 
 // Cambia esta URL según tu endpoint real
-const ENDPOINT_URL = 'https://xuso18.app.n8n.cloud/webhook-test/2d98a77c-a474-4b90-a52a-bcbaf794d95c';
+const ENDPOINT_URL = 'https://xuso18.app.n8n.cloud/webhook/2d98a77c-a474-4b90-a52a-bcbaf794d95c';
 
 // Elementos del DOM
 const form = document.getElementById('reservaForm');
