@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Reservar Cita</title>
+  <!-- Enlace al CSS externo -->
+  <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+  <div class="container">
+    <!-- Puedes cambiar el logo o el nombre aquí -->
+    <div class="logo">LOGO</div>
+    <div class="business-name">Nombre del Negocio</div>
+
+    <form id="reservaForm" autocomplete="off">
+      <div>
+        <label for="nombre">Nombre <span class="required">*</span></label>
+        <input type="text" id="nombre" name="nombre" required placeholder="Tu nombre completo">
+      </div>
+      <div>
+        <label for="servicio">Servicio <span class="required">*</span></label>
+        <select id="servicio" name="servicio" required>
+          <option value="" disabled selected>Selecciona un servicio</option>
+          <!-- Edita los servicios según tu negocio -->
+          <option value="Corte de Cabello">Corte de Cabello</option>
+          <option value="Barbería">Barbería</option>
+          <option value="Tatuaje">Tatuaje</option>
+          <option value="Coloración">Coloración</option>
+          <option value="Otro">Otro</option>
+        </select>
+      </div>
+      <div>
+        <label for="fecha">Fecha y hora <span class="required">*</span></label>
+        <input type="datetime-local" id="fecha" name="fecha" required>
+      </div>
+      <div>
+        <label for="telefono">Teléfono</label>
+        <input type="tel" id="telefono" name="telefono" placeholder="Opcional">
+      </div>
+      <button type="submit">Reservar cita</button>
+    </form>
+    <div class="confirmation" id="confirmation" style="display:none"></div>
+  </div>
+
+  <!-- Enlace al JS externo -->
+  <script src="funciones.js"></script>
+</body>
+</html>
